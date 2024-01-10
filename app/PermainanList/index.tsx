@@ -9,7 +9,7 @@ export default function PermainanList() {
             <div className="flex justify-center flex-wrap gap-10">
                 {
                     data.map((item, index) => (
-                        <div className='w-96 max-lg:w-80 border rounded-md overflow-hidden pb-2'>
+                        <div key={index} className='w-96 max-lg:w-80 border rounded-md overflow-hidden pb-2'>
                             <Link href={`/permainan/${index}`}>
                                 <Image className='w-full h-56 object-cover' width={500} height={500} src={item.image} alt='...'></Image>
                             </Link>
