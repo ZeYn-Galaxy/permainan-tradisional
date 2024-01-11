@@ -14,8 +14,10 @@ export default function PermainanSlug({ params }: any) {
                     <Image className="w-full object-cover rounded-md" width={500} height={500} src={data[params.id] === undefined ? "" : data[params.id].image} alt="..." />
                 </div>
                 <div className="w-1/2 p-5 max-md:w-full">
-                    <p className="text-2xl font-semibold">Deskripsi</p>
+                    <p className="text-2xl font-semibold">Pengertian</p>
                     <p>{data[params.id] === undefined ? "Not Found..." : data[params.id].deskripsi}</p>
+                    <p className="text-2xl font-semibold pt-8">Asal Usul</p>
+                    <p>{data[params.id] === undefined ? "Not Found..." : data[params.id].asal_usul}</p>
                 </div>
             </div>
         </main>
